@@ -7,11 +7,14 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    %header.header
-    = image_tag "beer.png", class: "header__img" do
-      .header__tittle
-        ばっかす
-    = yield
-    %footer
-      %p
-        © ばっかす 2019
+    #wrapper
+      %header.header
+      = image_tag "beer.png", class: "header__img"
+      = link_to "ばっかす", "/", class: "header__titlle"
+      = yield
+      %footer.footer
+        = image_tag "sashimi.png", class: "footer__img-left"
+        = image_tag "edamame.png", class: "footer__img-center"
+        = image_tag "karaage.png", class: "footer__img-right"
+        .footer__logo
+          © ばっかす 2020
