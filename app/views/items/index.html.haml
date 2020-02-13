@@ -1,5 +1,13 @@
-%h1.test トップページ
-- @items.each do |item|
-  = item.item
-  = item.text
-  = item.liquor_id
+-# #pagenate
+  -# = render partial: "index"
+.top-main
+  .top-box
+    .top-box__titlle
+      最近呑んだお酒
+    .top-box__items
+      .top-item
+        - @items.each do |item|
+          .top-item__box
+            .top-item__name
+              = item.item
+      .top-paginate= paginate @items
