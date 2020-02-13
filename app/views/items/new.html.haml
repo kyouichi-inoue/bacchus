@@ -1,0 +1,20 @@
+.new-main
+  .new-box
+    .new-box__titlle
+      本日の一杯
+    = form_for @item,url: items_path,class:'new-box__items' do |f|
+      .new-box__items
+        .new-picture
+        = f.fields_for :images do |image|
+          .new-information
+            .new-information__left
+              .new-information__left__name
+              .new-information__left__liquor
+              .new-information__left__place
+            .new-information__right
+              .new-information__right__taste
+              .new-information__right__alcohol
+              .new-information__right__yobi
+            .new-information__text
+      .new-submit
+        登録
