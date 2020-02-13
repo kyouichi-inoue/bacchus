@@ -1,0 +1,71 @@
+.new-main {
+  background-color: rgb(254, 255, 215);
+  height: 450px;
+  width: 100%;
+}
+.new-box {
+  z-index: 1;
+  height: 450px;
+  width: 100%;
+  &__titlle {
+    font-size: 30px;
+    font-family: Hiragino Mincho Pro;
+    margin-left: 100px;
+  }
+  &__items {
+    height: 350px;
+    width: 1500;
+    background-color: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+.new-picture {
+  height: 350px;
+  width: 550px;
+  float: left;
+}
+.new-information {
+  height: 350px;
+  width: 800px;
+  float: right;
+  &__left {
+    height: 190px;
+    width: 350px;
+    float: left;
+    &__name {
+      height: 40px;
+      width: 300px;
+    }
+    &__liquor {
+      height: 40px;
+      width: 300px;
+    }
+    &__place {
+      height: 40px;
+      width: 300px;
+    }
+  }
+  &__right {
+    height: 190px;
+    width: 350px;
+    float: right;
+    &__taste {
+      height: 40px;
+      width: 300px;
+    }
+    &__alcohol {
+      height: 40px;
+      width: 300px;
+    }
+    &__yobi {
+      height: 40px;
+      width: 300px;
+    }
+  }
+  &__text {
+    height: 150px;
+    width: 800px;
+    padding: 200px 0 0 0;
+  }
+}
