@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ばっかす
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #wrapper
+      %header.header
+      = image_tag "beer.png", class: "header__img"
+      = link_to "ばっかす", "/", class: "header__titlle"
+      = yield
+      %footer.footer
+        = image_tag "sashimi.png", class: "footer__img-left"
+        = image_tag "edamame.png", class: "footer__img-center"
+        = image_tag "karaage.png", class: "footer__img-right"
+        .footer__logo
+          © ばっかす 2020
