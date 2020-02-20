@@ -1,0 +1,122 @@
+.show-main {
+  background-color: rgb(254, 255, 215);
+  height: 450px;
+  width: 1600px;
+}
+.show-box {
+  height: 450px;
+  width: 1600px;
+  &__titlle {
+    font-size: 30px;
+    font-family: Hiragino Mincho Pro;
+    margin-left: 300px;
+    display: flex;
+  }
+  &__items {
+    height: 350px;
+    width: 1000px;
+    background: linear-gradient(rgb(198, 255, 255), rgb(152, 205, 255));
+    margin: 0 100px;
+    float: left;
+    .show-picture {
+      height: 300px;
+      width: 500;
+      float: left;
+      margin: 25px 0px 25px 20px;
+      border:solid 1px green;
+      border-top: 2px solid green;
+      background-color: #fff;
+      &__box {
+        height: 300px;
+        width: 460px;
+        &__in {
+          height: 300px;
+          width: 460px;
+          object-fit: contain;
+        }
+      }
+    }
+    .show-information {
+      height: 150px;
+      width: 460px;
+      float: right;
+      margin: 25px 20px 0 0;
+      border:solid 1px green;
+      border-top: solid 2px green;
+      background-color: #fff;
+      &__day {
+        height: 33px;
+        width: 100%;
+        background-color: #fff;
+        font-size: 23px;
+        line-height: 33px;
+      }
+      &__liquor {
+        height: 28px;
+        width: 100%;
+        border-bottom: solid 1px brown;
+        background-color: #fff;
+        line-height: 28px;
+      }
+      &__place {
+        height: 28px;
+        width: 100%;
+        border-bottom: solid 1px brown;
+        background-color: #fff;
+        line-height: 28px;
+      }
+      &__alcohol {
+        height: 28px;
+        width: 100%;
+        border-bottom: solid 1px brown;
+        background-color: #fff;
+        line-height: 28px;
+      }
+      &__taste {
+        height: 28px;
+        width: 100%;
+        background-color: #fff;
+        line-height: 28px;
+      }
+    }
+    .show-text {
+      height: 138px;
+      width: 460px;
+      float: right;
+      margin: 10px 20px 0 0;
+      border:solid 1px green;
+      background-color: #fff;
+    }
+  }
+  &__left {
+    height: 350px;
+    width: 200px;
+    float: left;
+    position: relative;
+    &__icon {
+      position: absolute;
+      transform: translate(50%,60%);
+    }
+  }
+  &__right {
+    height: 350px;
+    width: 200px;
+    float: right;
+    position: relative;
+    &__icon {
+      position: absolute;
+      transform: translate(0,50%);
+    }
+  }
+}
+i {
+  color: rgb(0, 177, 177);
+}
+.show-back {
+  height: 50px;
+  width: 200px;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
