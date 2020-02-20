@@ -1,0 +1,30 @@
+.show-main
+  .show-box
+    .show-box__titlle
+      = @item.item
+    .show-box__left
+      .show-box__left__icon
+        %i.fas.fa-glass-martini.fa-9x
+    .show-box__items
+      .show-picture
+        .show-picture__box
+          = image_tag @item.images[0].image.url, class: 'show-picture__box__in'
+      .show-information
+        .show-information__day
+          吞んだ日 : 
+          = @item.images[0].created_at.strftime("%Y/%m/%d  %a  %H:%M")
+        .show-information__liquor
+          お酒の種類 : #{@item.liquor.name}
+        .show-information__place
+          産地 : #{@item.place.name}
+        .show-information__alcohol
+          アルコール度数 : #{@item.alcohol.name}
+        .show-information__taste
+          味・特徴 : #{@item.taste.name}
+      .show-text
+        = simple_format @item.text
+    .show-box__right
+      .show-box__right__icon
+        %i.fas.fa-beer.fa-10x
+    .show-back
+      = link_to 'トップへ戻る','/',class: 'show-back__btn'

@@ -1,0 +1,26 @@
+.top-main
+  .top-box
+    .top-box__titlle
+      = @user
+      さんの飲酒履歴
+    .top-box__items
+      - @items.each do |item|
+        .top-item
+          .top-item__box
+            = image_tag item.images[0].image.url,class: 'top-picture'
+            .top-item__name
+              = link_to "", item_path(item.id), class: "top-item__name__link"
+              = item.item
+          - if user_signed_in? && current_user.id == item.user_id
+            .edit-box
+              = link_to '編集', "/items/#{item.id}/edit", method: :get
+            .destroy-box
+              = link_to '削除', "/items/#{item.id}", method: :delete
+          - else
+            .edit-box
+            .destroy-box
+    .top-paginate= paginate @items
+    = link_to "/items/new/", class: "top-new-btn" do
+      お酒登録
+      .top-new-icon
+        .fas.fa-beer.fa-4x

@@ -5,9 +5,47 @@
     .top-box__titlle
       最近呑んだお酒
     .top-box__items
-      .top-item
-        - @items.each do |item|
+      - @items.each do |item|
+        .top-item
           .top-item__box
+            = image_tag item.images[0].image.url,class: 'top-picture'
             .top-item__name
+              = link_to "", item_path(item.id), class: "top-item__name__link"
               = item.item
-      .top-paginate= paginate @items
+          - if user_signed_in? && current_user.id == item.user_id
+            .edit-box
+              = link_to '編集', "/items/#{item.id}/edit", method: :get
+            .destroy-box
+              = link_to '削除', "/items/#{item.id}", method: :delete
+            .top-item-user
+              = link_to item.user.user, "/users/#{item.user.id}"
+          - else
+            .edit-box
+            .destroy-box
+            .top-item-user
+              = link_to item.user.user, "/users/#{item.user.id}"
+    .top-paginate= paginate @items
+    = link_to "/items/new/", class: "top-new-btn" do
+      お酒登録
+      .top-new-icon
+        .fas.fa-beer.fa-4x
+    .top-login
+      - if user_signed_in?
+        .top-login__box
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        .top-login__box
+          = link_to "ログイン", new_user_session_path, class: 'post'
+          ／
+          = link_to "新規登録", new_user_registration_path, class: 'post'
+    .top-mypage
+      - if user_signed_in?
+        .top-mypage__area
+          = link_to "", "/users/#{current_user.id}", class: "top-mypage__area__link"
+          .top-mypage__area__user
+            = current_user.user
+            さんの
+          .top-mypage__area__btn
+            マイページ
+      - else
+        .top-mypage__none
