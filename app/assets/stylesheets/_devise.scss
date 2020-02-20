@@ -1,0 +1,11 @@
+.sign-in {
+  height: 350px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  &__titlle {
+    color: rgb(20, 180, 255);
+    font-size: 30px;
+    margin: 5px;
+  }
+}
