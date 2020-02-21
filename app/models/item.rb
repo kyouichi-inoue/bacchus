@@ -10,7 +10,6 @@ class Item < ApplicationRecord
   validates :taste_id, presence: true
   validates :alcohol_id, presence: true
   validates :images, presence: true
-  belongs_to :user
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :liquor

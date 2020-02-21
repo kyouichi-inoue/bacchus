@@ -4,10 +4,6 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.includes(:user).order("created_at DESC").page(params[:page]).per(5)
-    # respond_to do |format|
-    #   format.html
-    #   format.js
-    # end
   end
 
   def new
@@ -17,6 +13,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    
     if @item.save
       render :create
     else
@@ -33,6 +30,7 @@ class ItemsController < ApplicationController
   end
 
   def update
+    
     if @item.update(item_params)
       render :update
     else
