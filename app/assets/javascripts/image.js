@@ -2,7 +2,7 @@ $(function(){
   $('form').on('change', 'input[type="file"]', function(e) {
     var file = e.target.files[0],
         reader = new FileReader(),
-        $preview = $(".new-picture");
+        $preview = $(".new-picture__btn");
         t = this;
     if(file.type.indexOf("image") < 0){
       return false;
@@ -12,8 +12,8 @@ $(function(){
         $preview.empty();
         $preview.append($('<img>').attr({
                   src: e.target.result,
-                  width: "200px",
-                  class: "new-picture",
+                  width: "210px",
+                  class: "file-box",
                   title: file.name
               }));
       };

@@ -7,7 +7,7 @@
         .new-picture
           = f.fields_for :images do |image|
             .new-picture__btn
-            = image.file_field :image, class: 'file-box', id: 'item-image'
+            = image.file_field :image, class: 'file-box'
         .new-information
           .new-information__left
             .new-information__left__name

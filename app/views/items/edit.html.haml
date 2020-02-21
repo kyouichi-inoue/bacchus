@@ -7,8 +7,9 @@
         .new-picture
           = f.fields_for :images do |image|
             .new-picture__btn
-            = image.file_field :image, class: 'file-box-edit'
-            = image_tag @item.images[0].image.url, class: 'edit-picture-box'
+            = image.file_field :image, class: 'file-box'
+            .caution
+              画像は改めて選択しない場合前回のものが登録されます
         .new-information
           .new-information__left
             .new-information__left__name
