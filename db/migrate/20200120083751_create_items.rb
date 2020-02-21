@@ -7,6 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.integer :taste_id
       t.integer :place_id
       t.integer :alcohol_id
+      t.timestamps
     end
   end
 end

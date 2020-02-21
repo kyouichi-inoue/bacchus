@@ -1,13 +1,15 @@
 .new-main
   .new-box
     .new-box__titlle
-      本日の一杯
+      編集
     .new-box__items
-      = form_for @item,url: items_path, class:'new_item' do |f|
+      = form_for @item,url: ("/items/#{@item.id}/update"), class:'new_item' do |f|
         .new-picture
           = f.fields_for :images do |image|
             .new-picture__btn
             = image.file_field :image, class: 'file-box'
+            .caution
+              画像は改めて選択しない場合前回のものが登録されます
         .new-information
           .new-information__left
             .new-information__left__name
@@ -24,4 +26,4 @@
             .new-information__right__yobi
           .new-information__text
             = f.text_area :text, class: 'new-remarks', placeholder: '備考'
-            = f.submit "登録",class:'new-form-btn'
+            = f.submit "編集完了",class:'new-form-btn'

@@ -1,0 +1,41 @@
+.destroy-main {
+  background-color: rgb(254, 255, 215);
+  height: 450px;
+  width: 100%;
+}
+.destroy-box {
+  z-index: 1;
+  height: 450px;
+  width: 100%;
+  &__titlle {
+    height: 45px;
+    width: 100%;
+    font-size: 30px;
+    font-family: Hiragino Mincho Pro;
+    margin-left: 100px;
+  }
+  &__items {
+    height: 350px;
+    width: 1500;
+    background-color: #f2f2f2;
+    margin-left: 100px;
+    margin-right: 100px;
+    border:solid 5px rgb(255, 145, 0);
+    font-size: 60px;
+    font-family: Hiragino Mincho Pro;
+    font-weight: bold;
+    color: rgb(255, 145, 0);
+    text-align: center;
+    line-height: 200px;
+  }
+}
+.destroy-back {
+  height: 45px;
+  width: 400px;
+  font-size: 40px;
+  font-family: Hiragino Mincho Pro;
+  border:solid 3px rgb(255, 145, 0);
+  line-height: 45px;
+  text-align: center;
+  margin: 0 auto;
+}

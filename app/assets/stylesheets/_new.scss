@@ -18,49 +18,64 @@
     background-color: #fff;
     margin-left: 100px;
     margin-right: 100px;
+    position: relative;
   }
 }
+
 .new-picture {
   height: 350px;
   width: 550px;
   float: left;
+  background-color: rgb(211, 239, 248);
+  border:solid 1px #ccc;
+  text-align: center;
 }
+.file-box {
+  margin: 3px;
+}
+
 .new-information {
   height: 350px;
   width: 800px;
   float: right;
   &__left {
     height: 190px;
-    width: 350px;
+    width: 380px;
     float: left;
     &__name {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
     &__liquor {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
     &__place {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
   }
   &__right {
     height: 190px;
-    width: 350px;
+    width: 380px;
     float: right;
     &__taste {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
     &__alcohol {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
     &__yobi {
       height: 40px;
       width: 300px;
+      padding-top: 20px;
     }
   }
   &__text {
@@ -68,4 +83,24 @@
     width: 800px;
     padding: 200px 0 0 0;
   }
+}
+.new-select {
+  height: 40px;
+  width: 350px;
+  background-color: rgb(211, 239, 248);
+  border:solid 1px #ccc;
+}
+.new-remarks {
+  height: 140px;
+  width: 765px;
+  background-color: rgb(211, 239, 248);
+  border:solid 1px #ccc;
+}
+.new-form-btn {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(252, 221, 164);
+  margin: 5px 0 0 0;
+  position: absolute;
+  transform: translate(-710px, 145px);
 }
