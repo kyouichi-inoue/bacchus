@@ -24,7 +24,7 @@
 
 .new-picture {
   height: 350px;
-  width: 550px;
+  width: 39.3%;
   float: left;
   background-color: rgb(211, 239, 248);
   border:solid 1px #ccc;
@@ -36,63 +36,63 @@
 
 .new-information {
   height: 350px;
-  width: 800px;
+  width: 57.2%;
   float: right;
   &__left {
     height: 190px;
-    width: 380px;
+    width: 47.4%;
     float: left;
     &__name {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
     &__liquor {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
     &__place {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
   }
   &__right {
     height: 190px;
-    width: 380px;
+    width: 47.4%;
     float: right;
     &__taste {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
     &__alcohol {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
     &__yobi {
       height: 40px;
-      width: 300px;
+      width: 79%;
       padding-top: 20px;
     }
   }
   &__text {
     height: 150px;
-    width: 800px;
+    width: 99.9%;
     padding: 200px 0 0 0;
   }
 }
 .new-select {
   height: 40px;
-  width: 350px;
+  width: 116.5%;
   background-color: rgb(211, 239, 248);
   border:solid 1px #ccc;
 }
 .new-remarks {
   height: 140px;
-  width: 765px;
+  width: 95.5%;
   background-color: rgb(211, 239, 248);
   border:solid 1px #ccc;
 }

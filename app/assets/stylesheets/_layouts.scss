@@ -18,8 +18,9 @@ footer {
   }
   &__titlle {
     position: absolute;
-    top: 110px;
-    left: 685px;
+    // top: 110px;
+    // left: 685px;
+    transform: translate(245%,130%);
     z-index: 2;
     height: 80px;
     width: 250px;
@@ -38,17 +39,17 @@ footer {
   bottom: 10px;
   &__img-left {
     height: 220px;
-    width: 510px;
+    width: 31.9%;
     object-fit: contain;
   }
   &__img-center {
     height: 220px;
-    width: 510px;
+    width: 31.9%;
     object-fit: contain;
   }
   &__img-right {
     height: 220px;
-    width: 510px;
+    width: 31.9%;
     object-fit: contain;
   }
   &__logo {
