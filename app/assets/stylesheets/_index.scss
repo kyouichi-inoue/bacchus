@@ -22,27 +22,27 @@
     border: solid 1px black;
     .top-item {
       height: 350px;
-      width: 240px;
+      width: 17.1%;
       padding: 0 20px;
       &__box {
         height: 348px;
-        width: 200px;
+        width: 83.3%;
         padding: 0 20px;
         background: linear-gradient(-45deg,rgb(198, 255, 255), rgb(129, 194, 255));
         border: solid 1px rgb(212, 123, 123);
       }
       &__name {
         height: 49px;
-        width: 200px;
+        width: 100%;
         padding: 0 20px;
         background-color: rgb(255, 211, 245);
         position: relative;
-        transform: translate(-20px, 21px);
+        transform: translate(-8.5%, 42%);
         line-height: 50px;
         text-align: center;
         &__link {
           height: 50px;
-          width: 240px;
+          width: 100%;
           position: absolute;
           transform: translate(-26%, 0);
         }
