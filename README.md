@@ -1,27 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+本アプリは飲んだお酒を登録し,後でどんなお酒を飲んだか確認できるアプリです。
 
-Things you may want to cover:
+以前、旅行いった時に飲んだ美味しいお酒なんだっけな？
+自分の好きなお酒を他人に伝えたい！
+などの時に活躍するという想定で作成しました。
 
-* Ruby version
+### 開発理由
+世界には多くの酒があり、飲んだお酒を自分の代わりに覚えていて
+くれるアプリが欲しいと思ったのと、カリキュラムで習ったことを
+生かしたアプリを作りたかったため作成しました。
 
-* System dependencies
+## 機能一覧
+・ログイン機能
+・投稿機能
+・マイページ機能
+・編集、削除機能
+・投稿一覧機能
+・投稿詳細機能
+・画像ファイルのアップロード機能
+・ページネーション機能
+・画像選択時のpreview機能
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## アプリ内使用技術
+Ruby on Rails
+JavaScript
+AWS EC2 S3
 
 # ばっかす DB設計
 ## usersテーブル
