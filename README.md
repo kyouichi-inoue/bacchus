@@ -23,10 +23,13 @@
 ・ページネーション機能
 ・画像選択時のpreview機能
 
-## アプリ内使用技術
-Ruby on Rails
-JavaScript
-AWS EC2 S3
+## 開発環境
+Ruby on Rails /
+JavaScript /
+AWS EC2 S3 /
+Github /
+Visual Studio Code
+
 
 # ばっかす DB設計
 ## usersテーブル
